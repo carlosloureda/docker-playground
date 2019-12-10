@@ -1,0 +1,10 @@
+# docker-composer.yml
+version: "3" # version of docker composer
+services:
+  redis-server:
+    image: "redis"
+  node-app:
+    restart: "always"
+    build: . # look into that folder for a Dockerfile to build this image
+    ports: # on yaml arrays are with -
+      - "4001:8081"
