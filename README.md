@@ -1,4 +1,4 @@
-# Docker Playground
+# Docker Playground [![Build Status](https://travis-ci.org/carlosloureda/docker-playground.svg?branch=master)](https://travis-ci.org/carlosloureda/docker-playground)
 
 What we have here is our first application built with Docker & CI/CD for deploying to
 AWS and tested over TravisCI.
