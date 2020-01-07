@@ -29,6 +29,11 @@ Of course you can test part of the code without having an AWS account but you wo
 
 Will update this once I complete the project to make sure to have all the steps ready.
 
+## Branches
+
+- For hello world react app just focus on the `master` branch
+- For a overway complicated `fibonacci` application for multicontainers over AWS go to the `fibonacci`branch
+
 ## Support
 
 Please [open an issue](https://github.com/carlosloureda/docker-playground/issues/new) for support.
