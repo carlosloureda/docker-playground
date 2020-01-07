@@ -8,3 +8,18 @@ before_install:
 
 script:
   - docker run -e CI=true carlosloureda/docker-playground npm run test
+
+deploy:
+  provider: elasticbeanstalk # travisCI makes things this easy!
+  region: "us-east-1" # region of our elastic beanstalk on the URL
+  app: "docker-playground" # name of our elastic beanstalk app
+  env: " DockerPlayground-env" # from the AWS dahsboard on the breadcrumbs
+  bucket_name:
+    "elasticbeanstalk-us-east-1-612664494010" # travisCI si going to copy things to a bucket and later tell elastic
+    # beanstalk, it is created automatically when creating the app, search over `S3`
+  bucket_path: "docker-playground" #'docker' para el name of the app name, created on the first depoly
+  on: # where to deploy from
+    branch: master
+# Now create the Keys for IAM
+
+# Username: docker-playground-travis-ci
